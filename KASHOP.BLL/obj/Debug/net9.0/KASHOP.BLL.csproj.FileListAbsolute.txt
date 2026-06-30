@@ -8,6 +8,7 @@ C:\Users\User\Desktop\AP!\KASHOP\KASHOP.BLL\obj\Debug\net9.0\KASHOP.BLL.Generate
 C:\Users\User\Desktop\AP!\KASHOP\KASHOP.BLL\obj\Debug\net9.0\KASHOP.BLL.AssemblyInfoInputs.cache
 C:\Users\User\Desktop\AP!\KASHOP\KASHOP.BLL\obj\Debug\net9.0\KASHOP.BLL.AssemblyInfo.cs
 C:\Users\User\Desktop\AP!\KASHOP\KASHOP.BLL\obj\Debug\net9.0\KASHOP.BLL.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\AP!\KASHOP\KASHOP.BLL\obj\Debug\net9.0\KASHOP.BLL.sourcelink.json
 C:\Users\User\Desktop\AP!\KASHOP\KASHOP.BLL\obj\Debug\net9.0\KASHOP.BLL.csproj.Up2Date
 C:\Users\User\Desktop\AP!\KASHOP\KASHOP.BLL\obj\Debug\net9.0\KASHOP.BLL.dll
 C:\Users\User\Desktop\AP!\KASHOP\KASHOP.BLL\obj\Debug\net9.0\refint\KASHOP.BLL.dll
