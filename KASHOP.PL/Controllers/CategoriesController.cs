@@ -19,14 +19,14 @@ namespace KASHOP.PL.Controllers
         private readonly IStringLocalizer<SharedResources> _localizer;
         private readonly ICategoryService _categoryservice;
 
-        public CategoriesController(IStringLocalizer<SharedResources> localizer,ICategoryService categoryService)
+        public CategoriesController(IStringLocalizer<SharedResources> localizer, ICategoryService categoryService)
         {
             _localizer = localizer;
             _categoryservice = categoryService;
         }
 
         [HttpGet("")]
-        public async Task<IActionResult> Index() 
+        public async Task<IActionResult> Index()
         {
             var categories = await _categoryservice.GetAllCategoriesAsync();
 
@@ -38,6 +38,32 @@ namespace KASHOP.PL.Controllers
         {
 
             var response = await _categoryservice.CreateCategoryAsync(request);
+
+            return Ok();
+        }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+
+            var category = await _categoryservice.GetCategory(cat =>  cat.Id == id);
+
+            return Ok(category);
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+
+            var deleted = await _categoryservice.DeleteCategory(id);
+            if (!deleted) return BadRequest();
+
+            return Ok();
+        }
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> Update(int id , CategoryRequest request)
+        {
+
+            var updated = await _categoryservice.UpdateCategory(id, request);
+            if (!updated) return BadRequest();
 
             return Ok();
         }
